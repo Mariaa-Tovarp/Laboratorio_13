@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.Curriculum {
+    display: flex;
+    width: 800px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Espacio debajo del currículum */
+}
+
+.Columna_izquierda {
+    background-color: #d9c5c5;
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+}
+
+.Columna_Derecha {
+    width: 60%;
+    padding: 20px;
+}
+
+.img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    line-height: 1.5;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.Formulario {
+    width: 800px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.Formulario h3 {
+    text-align: center;
+    color: #333;
+}
+
+.Formulario label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.Formulario input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.Formulario button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Formulario button:hover {
+    background-color: #555;
+}

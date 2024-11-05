@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Vitae</title>
+    <link rel="stylesheet" href="styles/Estilos.css">
+</head>
+<body>
+    <div class="Curriculum">
+        <div class="Columna_izquierda">
+            <img src="img/Foto.jpg" alt="Foto de perfil" class="img">
+            <section class="Sobre_mi">
+                <h3>Sobre mí</h3>
+                <p>Estudiante de Ingeniería de Sistemas con un enfoque en el desarrollo de soluciones tecnológicas, seguridad informática y automatización de procesos. Me caracterizo por ser una persona orientada a resultados, con habilidades para la resolución de problemas y una rápida adaptación a nuevas herramientas tecnológicas. Busco contribuir en proyectos desafiantes que impulsen la innovación y el uso eficiente de recursos digitales.</p>
+            </section>
+            <footer class="Contacto_info">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class="Telefono"></i>3042737776</li>
+                    <li><a href="mailto:mariaa-tovarp@unilibre.edu.co">mariaa-tovarp@unilibre.edu.co</a></li>
+                    <li><i class="Direccion"></i>Barranquilla, Atlántico</li>
+                </ul>
+            </footer>
+        </div>
+
+        <div class="Columna_Derecha">
+            <h1>Maria Ángel Tovar Pérez</h1>
+            <h2><center>Estudiante</center></h2>
+            <section class="Educacion">
+                <h3>Formación Académica</h3>
+                <p><strong>Universidad Libre</strong><br>
+                    Universidad Libre, 2023 – Actual</p>
+                <p><strong>Institución Educativa San Pedro Claver</strong><br>
+                   Bachillerato, 2022.</p>
+            </section>
+
+            <section class="Lenguajes">
+                <h3>Idioma</h3>
+                <p>Español nativo.</p>
+            </section>
+
+            <section class="Habilidades_Tecnicas">
+                <h3>Habilidades Técnicas</h3>
+                <ul>
+                    <li>Desarrollo móvil con App Inventor.</li>
+                    <li>Ciberseguridad básica.</li>
+                    <li>Implementación de seguridad en IoT.</li>
+                    <li>Microsoft Excel avanzado.</li>
+                    <li>Fundamentos de programación (Python)</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    
+            <!-- Formulario de contacto -->
+            <section class="Formulario">
+                <h3>Formulario de Contacto</h3>
+                <form id="contactForm">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+    <script>
+        // Validación de formulario
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            form.addEventListener('submit', function(event) {
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+
+                if (name === "" || email === "") {
+                    alert('Por favor, completa todos los campos.');
+                    event.preventDefault();
+                } else {
+                    alert('¡Formulario enviado correctamente!');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
